@@ -1,0 +1,611 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - Официальный сайт</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/itcsliderкопия.css">
+    <link rel="icon" type="image/x-icon" href="https://www.minecraft.net/content/dam/games/minecraft/logos/MCVB_App_Icon_Flat_18x18.png">
+            
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            margin: 0px;
+            max-height: 965px;  
+        }
+        @font-face { 
+            font-family: Minecraft; src: url('fonts/minecraft.ttf');
+        }          
+        #menubg {
+            margin: 0px auto;
+            position: fixed;
+            top: 0px;
+            left: auto;
+            width: 100%;
+            height: 80px;
+            max-width: 1500px;
+            min-width: 650px;
+            background: linear-gradient(180deg, #1a1a1a 0%, #2b2b2b 100%);
+            border-bottom: 1px solid #3b3b3b;
+            z-index: 1;
+        } 
+        #menu {
+            position: relative;
+            display: inline-block;
+            font-family: Minecraft;
+            font-size: 18pt;
+            width: 190px;
+            height: 40px;
+            margin: 0px auto;
+            
+        }
+        #menu ul {
+            display: inline-block;
+            position: absolute;
+            top: 15%;
+            padding: 10px;
+            margin: 0px;
+        }
+        #menu li {
+            position: absolute;
+            display: flex;
+            list-style-type: none;
+        }
+        #menu p {
+            width: auto;
+            padding: 10px;
+            margin-right: 20px;
+            color: white;
+            display: flex;
+            text-decoration: none;
+            transition: 0.2s;         
+        }
+        #menu a {
+            margin-left: 5px;
+        }
+        #menu img {
+            max-height: 30px;
+            position: absolute;
+            bottom: 16px;
+            padding: 10px;
+            margin: -10px;
+            transition: 0.2s;           
+            cursor: pointer;
+        }
+        #menu img:hover {
+            filter: drop-shadow(#111111 0px 9px);
+            transform: translate(0px, -7px);
+            transition: 0.2s; 
+        }
+        body{
+            background-color: #000000;
+            width: 1500px;
+            min-width: 650px; 
+            max-width: 1500px;
+            margin: 0px auto;
+        }
+        #banner {
+            top: 80px;
+            position: relative;
+            max-width: 1500px;
+            min-width: 650px;
+            width: 100%;
+            object-fit: contain;
+        }
+        #banner .text {
+            transform-origin: center;
+            position: absolute;
+            transform: translate(14%, 0);
+
+            font-family: 'Minecraft';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 81px;
+            text-align: center;
+
+            color: #FFFFFF;
+
+            text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.7);
+        }
+        #logo {
+            transform: translate(-50%, 0);
+            position: absolute;
+            right: -13%;
+            top: 20%;
+        }
+        #button {
+            transform-origin: center;
+            max-width: 180px;
+            max-height: 75px;
+            transition: 0.2s;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            
+            background: #FFB62C;
+            box-shadow: inset 0px -8px 0px #D38A00, inset 0px 8px 0px #FFDB98;
+            color: #6C501A;
+            padding: 15px 30px;
+            margin: 0px;
+            
+            font-size: 36px;
+            text-size-adjust: auto;
+            align-items: center;
+            text-decoration: none;
+            font-family: 'Minecraft';
+            font-style: normal;
+            text-decoration: none;
+        }
+        
+        #button:hover {
+            color: #440d4e;
+            background: #AC3AD4;
+            box-shadow: inset 0px -8px 0px #892F97, inset 0px 8px 0px #DA7EFA;
+        }
+        #desc {
+            top: 80px;
+            position: relative;
+            max-width: 1500px;
+            min-width: 650px;
+            width: 100%;
+            object-fit: contain;
+        }
+        #desc img {
+            margin: 0px;
+            max-width: 1500px;
+            max-height: 965px;
+        }
+        #desc h1 {
+            font-size-adjust: auto;
+            position: absolute;
+            width: 400px;
+            text-align: left;
+            height: auto;
+            left: 100px;
+            top: 120px;
+
+            font-family: 'Minecraft';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48pt;
+            line-height: 119px;
+
+            color: #FFFFFF;
+
+            text-shadow: 0px 0px 90px #000000, 0px 0px 90px #000000, 4px 4px 0px rgba(0, 0, 0, 0.5);
+        }
+        #desc h2 {
+            
+            position: absolute;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 44px;
+            text-align: left;
+            height: auto;
+            left: 100px;
+            top: 220px;
+            width: 600px;
+            color: #FFFFFF;
+
+            text-shadow: 0px 0px 90px #000000, 0px 0px 90px #000000, 4px 4px 0px rgba(0, 0, 0, 0.5);
+        }
+        #screens {
+            position: relative;
+            max-width: 1500px;
+            min-width: 650px;
+            width: 100%;
+            object-fit: contain;
+        }
+        #screens .button {
+            filter: drop-shadow(#11111179 4px -4px);
+            float: right; height: 60px;
+            image-rendering: pixelated;
+        }
+        #screens h1 {
+            margin-top: 120px;
+            margin-bottom: -90px;
+            font-family: 'Minecraft';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 112.8%;
+            /* or 54px */
+
+            color: white;
+        }
+        .itc-slider__items {
+            counter-reset: slide;
+            }
+
+        .itc-slider__item {
+            top: 120px;
+            flex: 0 0 100%;
+            max-width: 1100px;
+            position: relative;
+            }
+
+        .itc-slider__item::before {
+            
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #fff;
+            font-style: italic;
+            font-size: 32px;
+            font-weight: bold;
+            display: block;
+            }
+
+        .itc-slider__item:nth-child(1) {
+            height: 740px;
+            }
+
+            .itc-slider__item:nth-child(2) {
+                height: 740px;
+            }
+
+            .itc-slider__item:nth-child(3) {
+                height: 740px;
+            }
+        #scores {
+            top: 80px;
+            position: relative;
+            max-width: 1500px;
+            min-width: 650px;
+            width: 100%;
+            object-fit: contain;
+        }
+        #scores h1 {
+            transform: translate(-50%, 0);
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            top: 10px;
+            left: 50%;
+
+            font-family: 'Minecraft';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 90px;
+            line-height: 112.8%;
+            /* or 117px */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFB62C;
+            text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.75);
+        }
+        #scores p {
+            position: absolute;
+            width: 380px;
+            height: 135px;
+
+            font-family: 'Minecraft';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 112.8%;
+            /* or 54px */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: white;
+        }
+        #news {
+            top: 120px;
+            position: relative;
+            max-width: 1500px;
+            min-width: 650px;
+            width: 100%;
+            object-fit: contain;
+        }
+        #news .tumb {
+            
+            position: absolute;
+            max-width: 460px;
+            transform: translate(-50%, 0);
+            border: 3px solid #FFFFFF;
+        }
+        #news .text {
+            width: 100%;
+            position: absolute;
+            top: 420px;
+            text-align: center;
+
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 68px;
+            /* identical to box height */
+
+            color: #FFFFFF;
+
+            text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.7);
+        }
+        #news .yt {
+            transition: 0.2s;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 280px;
+            width: 85px;
+            filter: drop-shadow( 0px 0px 15px rgba(0, 0, 0, 0.75));
+        }
+        #news .yt:hover {
+            transition: 0.2s;
+            width: 95px;
+            cursor: pointer;
+        }
+        #sys {
+            display: block;
+            top: 120px;
+            position: relative;
+            max-width: 1500px;
+            min-width: 650px;
+            min-height: 844px;
+        }
+        #sys h1 {
+            position: absolute;
+            top: 420px;
+            text-align: center;
+
+            font-family: 'Minecraft';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+
+            align-items: center;
+            text-align: center;
+
+            color: white;
+        }
+        .main {
+            background-image: url(images/sys.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 48px;
+            max-height: 844px;
+            
+            color: white;
+        }
+  
+        .main div {
+            margin: 220px -25px;
+            margin-left: 100px;
+            max-width: 38%;
+        }
+        .main li {
+            list-style: none;
+        }
+        footer {
+            margin-top: 120px;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 250px;
+            max-width: 1500px;
+            flex-basis: 0;
+            flex-grow: 1;
+            background: linear-gradient(180deg, #2b2b2b 0%, #1a1a1a 100%);
+            border-top: 1px solid #3b3b3b;
+        }
+        footer ul {
+            margin-left: 30px;
+            color: white;
+            list-style: none;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 48px;
+            width: 240px;
+        }
+        footer a {
+            margin-top: 7px;
+            text-decoration: none;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 5px;
+
+            display: flex;
+            align-items: center;
+
+            color: #FFB62C;
+        }
+        footer a:hover {
+            color: #AC3AD4;
+        }
+        .logos {
+            width: 60%;
+            height: 100%;
+        }
+        .logos img {
+            align-items: center;
+            margin: 30px 20px;
+            height: 130px;
+            justify-content: center;
+        }
+        .logos p {
+            color: white;
+            list-style: none;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-size: 10pt;
+        }
+    </style>
+    </head>
+    <header id="menubg">
+        <div id="menu">
+            <ul>
+                <li>
+                    <p>Игры<a href="" class=""><img src="images/drop.svg" alt=""></a></p>
+                    <p>Сообщество<a href="" class=""><img src="images/drop.svg" alt=""></a></p>
+                    <p>Товары<a href="" class=""><img src="images/drop.svg" alt=""></a></p>                         
+                </li>
+            </ul>
+        </div>
+        <div id="menu" style="float: right;">
+            <ul>
+                <li>
+                    <p style="float: right; margin: 0px;"></a>Профиль</p>
+                    <a href="" class=""><img src="images/profile.svg" alt="">                           
+                </li>
+            </ul>
+        </div>
+    </header>
+    <body>
+        <div id="banner">
+            <div>
+                <img id="logo" style="height: 17%;" src="images/logo.png" alt="">
+                <center><a id="button" href="" style="height: auto; right: 270px; top: 500px;"><p>Купить</p></a></center>
+            </div>
+            <p class="text" style="top: 300px; right: 260px;">Создавай свои миры</p>
+            <img src="images/banner.png" style="width: 100%; top: 120px;" alt="">
+        </div>
+        <div style="height: 20px;"></div>
+        <div id="desc">
+            <img src="images/desc.png" style="width: 100%; top: 120px;" alt="">
+            <div>
+                <h1>ОБ ИГРЕ</h1>
+                <h2>Minecraft - это песочница с элементами выживания, завоевавшая сердца миллионов игроков со всего мира. Основной особенностью майнкрафт игры является полная свобода действий.</h2>
+            </div>
+        </div>
+        <div style="height: 20px;"></div>
+        <center><div id="screens">
+            <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+                <h1>Медия</h1>
+                <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                    <div class="itc-slider__item">
+                        <img style="width: 1100px;" src="images/screen1.jpg" alt="">
+                    </div>
+                    <div class="itc-slider__item">
+                        <img style="width: 1100px;" src="images/screen2.jpg" alt="">
+                    </div>
+                    <div class="itc-slider__item">
+                        <img style="width: 1100px;" src="images/screen3.jpg" alt="">
+                    </div>
+                </div>
+                </div>
+                <script src="js/itcslider.js" defer></script>
+                <button class="itc-slider__btn itc-slider__btn_prev"><img style="rotate: 180deg;" class="button" src="images/slide_btn.svg" alt=""></button>
+                <button class="itc-slider__btn itc-slider__btn_next"><img class="button"  src="images/slide_btn.svg" alt=""></button>
+            </div>
+        </div>
+    </center>
+        <div style="height: 20px;"></div>
+        <div id="scores">
+            <img src="images/scores.png" style="width: 100%; top: 120px;" alt="">
+            <h1>Продано 175+ МЛН копий</h1>
+            <p style="left: 100px; top: 50px;">Сербский пегас 100/100</p>
+            <p style="left: 100px; top: 200px;">Polygon 100/100</p>
+            <p style="left: 100px; top: 350px;">MAIL.ИГРЫ 9.9/10</p>
+            <p style="left: 100px; top: 500px;">Stopgame 10/10</p>
+            <p style="right: 100px; top: 50px;">УРАЛСТАЛЬЗАВОД 5/5</p>
+            <p style="right: -20px; top: 200px;">дикси <br>10/10</p>
+            <p style="right: -30px; top: 350px;">IGN <br>10/10</p>
+            <p style="right: 100px; top: 500px;">Игромания 10/10</p>
+        </div>
+        <div style="height: 20px;"></div>
+        <div id="news">
+            <img src="images/news.png" style="width: 100%;" alt="">
+            <center><img class="tumb" style="bottom: 350px;" src="images/kalashi.png" alt=""></center>
+            <img class="tumb" style="bottom: 350px; left: 280px;" src="images/frog.png" alt="">
+            <img class="tumb" style="bottom: 350px; right: 280px; transform: translate(50%, 0);" src="images/fence.png" alt="">
+            <center><img class="yt" src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_(2017).svg" alt=""></center>
+                <p class="text">КАЛАШИ UPDATE</p>
+                <p class="text" style="left: 100px; width: auto; font-size: 30px;">МОБ МЕСЯЦА: ЛЯГУШКА</p>
+                <p class="text" style="right: 120px; width: auto; font-size: 30px; ">БЛОК МЕСЯЦА: ЗАБОР</p>
+            <center><a id="button" href="" style="height: auto; bottom: 80px;"><p>Больше</p></a></center>
+        </div>
+        <div style="height: 20px;"></div>
+        <div id="sys">
+            <div>
+                <h1 style="top: 60px; width: 100%;">Системные требования</h1>
+                <h1 style="top: 140px; left: 100px; width: auto; font-size: 40px;">Минимальные</h1>
+                <h1 style="top: 140px; right: 410px; width: auto; font-size: 40px;">Рекомендуемые</h1>
+                <div class="main">
+                    <div>
+                        <ul>
+                            <li>Центральный процессор</li>
+                            <li style="color: #BCB989;">Intel Core i3-3210 / AMD A8-7600 APU либо эквивалент</li>
+                            <li>Оперативная память</li>
+                            <li style="color: #BCB989;">2 ГБ свободной памяти, желательно DDR3 1333 МГц</li>
+                            <li>Графический процессор</li>
+                            <li style="color: #BCB989;">Nvidia GeForce 400 Series (410+) либо AMD Radeon HD 7000 серии с поддержкой OpenGL 4.4</li>
+                            <li>Место на жёстком диске</li>
+                            <li style="color: #BCB989;">1 Гб</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Центральный процессор</li>
+                            <li style="color: #BCB989;">Intel Core i3-3210 / AMD A8-7600 APU либо эквивалент</li>
+                            <li>Оперативная память</li>
+                            <li style="color: #BCB989;">4 ГБ свободной памяти, хотя бы DDR3 1600 МГц</li>
+                            <li>Графический процессор</li>
+                            <li style="color: #BCB989;">GeForce 700 Series (740+) либо Radeon R7.</li>
+                            <li>Место на жёстком диске</li>
+                            <li style="color: #BCB989;">4 Гб</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <p style="font-weight: bold; margin-top: 20px;">Игры</p>
+                <li><a href="">Minecraft</a></li>
+                <li><a href="">Minecraft Dungeons</a></li>
+                <li><a href="">Minecraft Legends</a></li>
+                <li><a href="">Minecraft Story Mode</a></li>
+            </ul>
+            <ul>
+                <p style="font-weight: bold; margin-top: 20px;">Сообщество</p>
+                <li><a href="">Сообщество</a></li>
+                <li><a href="">Учебный портал для авторов</a></li>
+                <li><a href="">Карьера в Mojang Studios</a></li>
+            </ul>
+            <ul>
+                <p style="font-weight: bold; margin-top: 20px;">Поддержка</p>
+                <li><a href="">Обсуждения и справка</a></li>
+                <li><a href="">Отзывы и предложения</a></li>
+                <li><a href="">Карта сайта</a></li>
+                <li><a href="">Загрузить</a></li>
+            </ul>
+            <ul>
+                <p style="font-weight: bold; margin-top: 20px;">Магазин</p>
+                <li><a href="">Рынок</a></li>
+                <li><a href="">Магазин Minecraft</a></li>
+            </ul>
+            <div class="logos">
+                <center>
+                    <img src="images/raskumar.svg" alt="">
+                    <img src="images/mojang.png" alt="">
+                    <img src="images/xbox.webp" alt="">
+                    <p>© Mojang, 2009-2022. Товарный знак "Minecraft" принадлежит компании Mojang Synergies AB</p>
+                </center>
+            </div>  
+        </footer>
+    </body> 
+</html>
