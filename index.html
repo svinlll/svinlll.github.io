@@ -378,31 +378,32 @@
             font-family: 'Noto Sans';
             font-style: normal;
             font-weight: 400;
-            font-size: 26px;
-            line-height: 48px;
+            font-size: 22px;
+            line-height: 36px;
             max-height: 844px;
             
             color: white;
         }
   
         .main div {
-            margin: 220px -25px;
+            margin: 200px -25px;
             margin-left: 100px;
             max-width: 38%;
         }
         .main li {
+            text-align: left;
             list-style: none;
         }
         footer {
-            margin-top: 120px;
-            position: absolute;
-            display: flex;
+            /* overflow: hidden; */
+            margin-top: 60px;
+            position: relative;
+            display: inline-flex;
             flex-direction: row;
             width: 100%;
             height: 250px;
             max-width: 1500px;
-            flex-basis: 0;
-            flex-grow: 1;
+            min-width: 650px;
             background: linear-gradient(180deg, #2b2b2b 0%, #1a1a1a 100%);
             border-top: 1px solid #3b3b3b;
         }
@@ -541,40 +542,42 @@
                 <p class="text" style="right: 120px; width: auto; font-size: 30px; ">БЛОК МЕСЯЦА: ЗАБОР</p>
             <center><a id="button" href="" style="height: auto; bottom: 80px;"><p>Больше</p></a></center>
         </div>
-        <div style="height: 20px;"></div>
-        <div id="sys">
-            <div>
-                <h1 style="top: 60px; width: 100%;">Системные требования</h1>
-                <h1 style="top: 140px; left: 100px; width: auto; font-size: 40px;">Минимальные</h1>
-                <h1 style="top: 140px; right: 410px; width: auto; font-size: 40px;">Рекомендуемые</h1>
-                <div class="main">
-                    <div>
-                        <ul>
-                            <li>Центральный процессор</li>
-                            <li style="color: #BCB989;">Intel Core i3-3210 / AMD A8-7600 APU либо эквивалент</li>
-                            <li>Оперативная память</li>
-                            <li style="color: #BCB989;">2 ГБ свободной памяти, желательно DDR3 1333 МГц</li>
-                            <li>Графический процессор</li>
-                            <li style="color: #BCB989;">Nvidia GeForce 400 Series (410+) либо AMD Radeon HD 7000 серии с поддержкой OpenGL 4.4</li>
-                            <li>Место на жёстком диске</li>
-                            <li style="color: #BCB989;">1 Гб</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Центральный процессор</li>
-                            <li style="color: #BCB989;">Intel Core i3-3210 / AMD A8-7600 APU либо эквивалент</li>
-                            <li>Оперативная память</li>
-                            <li style="color: #BCB989;">4 ГБ свободной памяти, хотя бы DDR3 1600 МГц</li>
-                            <li>Графический процессор</li>
-                            <li style="color: #BCB989;">GeForce 700 Series (740+) либо Radeon R7.</li>
-                            <li>Место на жёстком диске</li>
-                            <li style="color: #BCB989;">4 Гб</li>
-                        </ul>
+        <div style="height: 40px;"></div>
+        <center>
+            <div id="sys" style="width: 1200px;">
+                <div>
+                    <h1 style="top: 60px; width: 100%;">Системные требования</h1>
+                    <h1 style="top: 140px; left: 100px; width: auto; font-size: 40px;">Минимальные</h1>
+                    <h1 style="top: 140px; right: 225px; width: auto; font-size: 40px;">Рекомендуемые</h1>
+                    <div class="main">
+                        <div>
+                            <ul>
+                                <li>Центральный процессор</li>
+                                <li style="color: #BCB989;">Intel Core i3-3210 / AMD A8-7600 APU либо эквивалент</li>
+                                <li>Оперативная память</li>
+                                <li style="color: #BCB989;">2 ГБ свободной памяти, желательно DDR3 1333 МГц</li>
+                                <li>Графический процессор</li>
+                                <li style="color: #BCB989;">Nvidia GeForce 400 Series (410+) либо AMD Radeon HD 7000 серии с поддержкой OpenGL 4.4</li>
+                                <li>Место на жёстком диске</li>
+                                <li style="color: #BCB989;">1 Гб</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Центральный процессор</li>
+                                <li style="color: #BCB989;">Intel Core i3-3210 / AMD A8-7600 APU либо эквивалент</li>
+                                <li>Оперативная память</li>
+                                <li style="color: #BCB989;">4 ГБ свободной памяти, хотя бы DDR3 1600 МГц</li>
+                                <li>Графический процессор</li>
+                                <li style="color: #BCB989;">GeForce 700 Series (740+) либо Radeon R7.</li>
+                                <li>Место на жёстком диске</li>
+                                <li style="color: #BCB989;">4 Гб</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </center>
         <footer>
             <ul>
                 <p style="font-weight: bold; margin-top: 20px;">Игры</p>
