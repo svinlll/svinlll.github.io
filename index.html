@@ -202,9 +202,20 @@
             object-fit: contain;
         }
         #screens .button {
+            transform-origin: center;
             filter: drop-shadow(#11111179 4px -4px);
             float: right; height: 60px;
             image-rendering: pixelated;
+            transition: 0.2s;
+        }
+        #screens .button:hover {
+            height: 70px;
+            transition: 0.1s;
+            transform-origin: center;
+        }
+        #screens .button:active {
+            height: 60px;
+            transition: 0.2s;
         }
         #screens h1 {
             margin-top: 120px;
